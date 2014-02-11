@@ -40,32 +40,11 @@
                     <div class="input-group">
                         <input class="form-control new-todo-input js-new-todo-input" placeholder="What needs to be done?"/>
                         <span class="input-group-btn">
-                            <button class="btn add-todo">Carpe</button>
+                            <button class="btn add-todo js-add-todo">Carpe</button>
                         </span>
                     </div>
                     <!-- End input -->
                     <div class="todo-items">
-                        <div class="todo-item">
-                            <button type="button" class="edit-button" style="padding-left: 4px; padding-right: 2px;"><span class="glyphicon glyphicon-pencil"></span></button>
-                            <button type="button" class="done-button" style="padding-left: 2px; padding-right: 6px;"> 
-                                <span class="glyphicon glyphicon-ok done-button"></span>
-                            </button>
-                            <div class="description">
-                                <span class="id">Drink beer</span>
-                            </div>
-                            <button type="button" class="pull-right" style="padding-left: 4px; padding-right: 4px;"><span class="glyphicon glyphicon-remove delete-button"></span></button>
-                        </div>
-                        <div class="todo-item">
-                            <button type="button" class="edit-button" style="padding-left: 4px; padding-right: 4px;"><span class="glyphicon glyphicon-pencil"></span></button>
-                            <button type="button" class="done-button" style="padding-left: 4px; padding-right: 4px;"> 
-                                <span class="glyphicon glyphicon-ok done-button"></span>
-                            </button>
-                            <div class="description">
-                                <span class="id">Drink beer</span>
-                            </div>
-                            <button type="button" class="pull-right" style="padding-left: 4px; padding-right: 4px;"><span class="glyphicon glyphicon-remove delete-button"></span></button>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -76,7 +55,20 @@
 
         </div>
 
-
+        <!-- Template -->
+        <script type="text/template" class="todo-template">
+        <div class="todo-item">
+            <button type="button" class="edit-button" style="padding-left: 4px; padding-right: 4px;"><span class="glyphicon glyphicon-pencil"></span></button>
+            <button type="button" class="done-button" style="padding-left: 4px; padding-right: 4px;"> 
+                <span class="glyphicon glyphicon-ok done-button"></span>
+            </button>
+            <div class="description">
+                <span class="id"><%=description%></span>
+            </div>
+            <button type="button" class="pull-right remove-button" style="padding-left: 4px; padding-right: 4px;"><span class="glyphicon glyphicon-remove delete-button"></span></button>
+        </div>
+        </script>
+        <!-- End Template -->
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>

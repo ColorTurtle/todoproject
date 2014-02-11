@@ -1,7 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
-@import "compass/css3/border-radius";
+@import "compass/css3";
 
 
 /* Space out content a bit */
@@ -99,6 +99,28 @@ body {
             .description {
                 display: inline-block;
                 width: 55%;
+                color: rgb(92, 91, 91);
+            }
+
+            .edit-button {
+                color: gray;
+            }
+
+            .done-button {
+                color: gray;
+
+                &.selected {
+                    color: rgb(23, 126, 23);
+                }
+            }
+
+            .remove-button {
+                color: rgb(131, 36, 36);
+
+                &:hover {
+                    font-size: 20px;
+
+                }
             }
 
             button {
@@ -118,7 +140,7 @@ body {
 .footer {
     padding-top: 19px;
     color: #777;
-    border-top: 1px solid #e5e5e5;
+    // border-top: 1px solid #e5e5e5;
 }
 
 /* Main marketing message and sign up button */

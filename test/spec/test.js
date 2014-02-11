@@ -17,7 +17,7 @@
               var firstTodoText = $('.todo-item').first().children('.description').text();
 
               expect(firstTodoText).to.contain('Drink beer');
-            });
+            });  
         });
     });
 })();
