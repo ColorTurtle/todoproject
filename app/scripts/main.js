@@ -7,12 +7,12 @@ var todoList = [
     id: _.uniqueId()
   },
   {
-    description: 'Make Valentine Present',
+    description: 'Make Valentine present',
     done: true,
     id: _.uniqueId()
   },
   {
-    description: 'Get a ride to the airport.',
+    description: 'Get a ride to the airport so that I can see my family and have a great time.',
     done: false,
     id: _.uniqueId()
   }
@@ -27,7 +27,7 @@ $(document).ready(function(){
   _.each(todoList, function(item){
     $('.todo-items').prepend( todoTemplate(item) )
   })
-
+// Remove todo item
   $('.todo-items').on('click', '.js-remove-todo', function(){
     var parentId = $(this).parent().attr('id').split('-')[1];
 
