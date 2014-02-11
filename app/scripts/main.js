@@ -25,7 +25,7 @@ $(document).ready(function(){
 
   // render preloaded data
   _.each(todoList, function(item){
-    $('.todo-items').prepend( todoTemplate(item) )
+    $('.todo-items').prepend(todoTemplate(item))
   })
 // Remove todo item
   $('.todo-items').on('click', '.js-remove-todo', function(){
@@ -55,7 +55,7 @@ $(document).ready(function(){
     var todo = {
       description: description,
       done: false,
-      id: _.uniqueId()
+      id: _.uniqueId('todo')
     }
 
     // store the rendered template string

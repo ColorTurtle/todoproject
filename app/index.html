@@ -62,10 +62,10 @@
             <button type="button" class="done-button" style="padding-left: 4px; padding-right: 4px;"> 
                 <span class="glyphicon glyphicon-ok done-button"></span>
             </button>
-            <div class="description">
-                <span class="id"><%=description%></span>
+            <div class="description" id="<%=id%>">
+                <%=description%><span class: todoID> (Id: <%=id%>) </span>
             </div>
-            <button type="button" class="pull-right remove-button" style="padding-left: 4px; padding-right: 4px;"><span class="glyphicon glyphicon-remove delete-button"></span></button>
+            <button type="button" class="pull-right remove-button" style="padding-left: 4px; padding-right: 4px;"><span class="glyphicon glyphicon-remove delete-button js-remove-todo"></span></button>
         </div>
         </script>
         <!-- End Template -->

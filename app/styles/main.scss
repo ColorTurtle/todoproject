@@ -47,6 +47,7 @@ body {
     padding: 15px;
     background: #fff;
     border: 1px solid rgb(194, 194, 194);
+    box-shadow: 1px 1px 3px #e0dcdc;;
 
     .form-control {
         box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
@@ -119,7 +120,10 @@ body {
 
                 &:hover {
                     font-size: 20px;
+                }
 
+                &:focus {
+                    outline: none;
                 }
             }
 
